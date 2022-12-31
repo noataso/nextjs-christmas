@@ -1,0 +1,49 @@
+.container{
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.backImage{
+    top:0;
+    width:100%;
+    height:100vh;
+    position:absolute;
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+}
+
+.title{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    z-index:1;
+}
+
+.title .h1{
+    color:#ffff;
+    font-size: 5rem;
+}
+
+.block{
+    position: absolute;
+    z-index:1;
+    border-radius:50%;
+    animation:createBlock 2s infinite;
+}
+
+@keyframes createBlock {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
